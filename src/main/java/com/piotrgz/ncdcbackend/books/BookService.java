@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 @Service
 class BookService {
-    private BookRepository bookRepository;
+    private final BookRepository bookRepository;
 
     private BookService(BookRepository bookRepository) {
         this.bookRepository = bookRepository;

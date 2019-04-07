@@ -15,7 +15,7 @@ class BookDTO {
     @NotBlank
     @Pattern(regexp = "A.*", message = "Author last name must starts with A")
     private String authorLastName;
-    @NotBlank
+    @NotBlank(message = "title cannot be blank")
     private String title;
 
     public String getIsbn() {
